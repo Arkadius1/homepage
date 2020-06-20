@@ -1,7 +1,14 @@
-body{
-    background-color:green ;
+body {
+  background-color: green;
 }
 
-h2{
-    color: #1460AA;
+
+.main{
+    max-width: 1200px;
+margin: 0 auto;
+
+}
+
+h2 {
+  color: #1460aa;
 }

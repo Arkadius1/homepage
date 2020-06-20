@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Główna strona</a>
-            <a href="druga.html">Druga stronka</a>
-            <a href="trzecia.html">Trzecia stronka</a>
-        </nav>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Główna strona</a
+        >
+        <a class="navigation__link" href="druga.html">Druga stronka</a>
+        <a class="navigation__link" href="trzecia.html">Trzecia stronka</a>
+      </nav>
     </header>
-    <main>
-        <header>
-            <h1>Maciek Kowalski - praca domowa</h1>
-        </header>
 
-        <section>
-            <h2>Kim jestem?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fugiat voluptatem at adipisci qui aliquam
-                repellat maiores, a similique fuga natus facere voluptatum aspernatur libero mollitia debitis nemo
-                velit, perspiciatis, ullam nihil. Commodi nulla eos molestiae aperiam? Modi molestias vero nemo. Eaque
-                facere harum culpa. Facere saepe ad blanditiis, error itaque quibusdam incidunt repellat. Atque veniam
-                soluta consequatur a ab, cum labore. At ipsam sit facilis quam quaerat eius dolorum, repudiandae
-                laudantium dicta architecto, blanditiis doloremque quia rem deserunt, libero nulla quis! Nostrum, vero,
-                sed inventore, unde dolore provident blanditiis quos illo fuga ullam in odit saepe nemo voluptatum ex.
-            </p>
-        </section>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading main__heading--js" id="name">
+          Maciek Kowalski - praca domowa
+        </h1>
+      </header>
 
-        <section>
-            <img src="car.jpg" alt="samochód">
-            <h2>Notatki z drugiego tygodnia</h2>
-            <article>
-                <h3>Jak zrobic semantycznego HTML'a?</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dolore rerum eius ad earum
-                    soluta esse magni, consequuntur, architecto, aperiam quis. Natus quae corporis placeat quia magni
-                    quisquam aut atque ratione, quis fugiat porro assumenda eos doloremque ullam suscipit quos
-                    voluptates explicabo cupiditate expedita, a ex eum perferendis hic nemo.</p>
-            </article>
-            <article>
-                <h3>Coś tam o css</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quia porro nostrum, aperiam
-                    explicabo numquam officia soluta labore rerum consequuntur libero ipsum minima, impedit magni eius!
-                    Ad, provident sequi. Enim, tenetur, in, aliquam dolorem fuga numquam voluptas reprehenderit
-                    obcaecati maiores soluta aut error fugiat itaque porro consequatur commodi modi ratione!</p>
-            </article>
+      <section class="about">
+        <h2 class="about__heading">Kim jestem?</h2>
+        <img class="about__picture" src="car.jpg" alt="samochód" />
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe fugiat
+          voluptatem at adipisci qui aliquam repellat maiores, a similique fuga
+          natus facere voluptatum aspernatur libero mollitia debitis nemo velit,
+          perspiciatis, ullam nihil. Commodi nulla eos molestiae aperiam? Modi
+          molestias vero nemo. Eaque facere harum culpa. Facere saepe ad
+          blanditiis, error itaque quibusdam incidunt repellat. Atque veniam
+          soluta consequatur a ab, cum labore. At ipsam sit facilis quam quaerat
+          eius dolorum, repudiandae laudantium dicta architecto, blanditiis
+          doloremque quia rem deserunt, libero nulla quis! Nostrum, vero, sed
+          inventore, unde dolore provident blanditiis quos illo fuga ullam in
+          odit saepe nemo voluptatum ex.
+        </p>
+      </section>
 
-        </section>
+      <section class="notes">
+        <h2 class="notes__heading">Notatki z drugiego tygodnia</h2>
 
-        <footer>Strona o pracy domowej Maćka Kowalskiego jest wynikiem nauki HTML'a.</footer>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Jak zrobic semantycznego HTML'a?</h3>
+          <p class="week-summary__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            dolore rerum eius ad earum soluta esse magni, consequuntur,
+            architecto, aperiam quis. Natus quae corporis placeat quia magni
+            quisquam aut atque ratione, quis fugiat porro assumenda eos
+            doloremque ullam suscipit quos voluptates explicabo cupiditate
+            expedita, a ex eum perferendis hic nemo.
+          </p>
+        </article>
+
+        <article class="week-summary">
+          <h3 class="week-summary__title">Coś tam o css</h3>
+          <p class="week-summary__description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quia porro nostrum, aperiam explicabo numquam officia soluta labore
+            rerum consequuntur libero ipsum minima, impedit magni eius! Ad,
+            provident sequi. Enim, tenetur, in, aliquam dolorem fuga numquam
+            voluptas reprehenderit obcaecati maiores soluta aut error fugiat
+            itaque porro consequatur commodi modi ratione!
+          </p>
+        </article>
+
+      </section>
+
+      <footer class="footer">
+        Strona o pracy domowej Maćka Kowalskiego jest wynikiem nauki HTML'a.
+      </footer>
     </main>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
