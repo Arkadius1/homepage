@@ -1,14 +1,88 @@
-body {
-  background-color: green;
+html {
+  box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-.main{
-    max-width: 1200px;
-margin: 0 auto;
+body {
+  background: #f3e9d2;
+}
 
+.main {
+  max-width: 1200px;
+  margin: 50px auto 0 ;
+  text-align:center;
+}
+.header {
+  background: blue;
+  min-height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navigation {
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+.navigation--open{
+  display: block;
+}
+
+.navigation__link {
+ display: block;
+ margin-bottom: 10px;
+}
+.about {
+  margin: 20px;
+}
+.about__picture {
+  max-width: 100%;
+}
+
+.notes__picture {
+  max-width: 100%;
 }
 
 h2 {
   color: #1460aa;
 }
+
+
+
+.week-summary {
+  border: 2px solid #1a936f;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navigation__link {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #1a936f;
+  }
+}
+
+/* kolorki na stronce 
+https://coolors.co/114b5f-1a936f-88d498-c6dabf-f3e9d2*/

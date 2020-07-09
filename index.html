@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="navigation">
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Główna strona</a
         >
         <a class="navigation__link" href="druga.html">Druga stronka</a>
         <a class="navigation__link" href="trzecia.html">Trzecia stronka</a>
       </nav>
+      <button class="burger">:emoji
+      </button>
     </header>
 
     <main class="main">
@@ -42,10 +45,10 @@
           odit saepe nemo voluptatum ex.
         </p>
       </section>
-
+     
       <section class="notes">
         <h2 class="notes__heading">Notatki z drugiego tygodnia</h2>
-
+        <div>
         <article class="week-summary">
           <h3 class="week-summary__title">Jak zrobic semantycznego HTML'a?</h3>
           <p class="week-summary__description">
@@ -55,6 +58,8 @@
             quisquam aut atque ratione, quis fugiat porro assumenda eos
             doloremque ullam suscipit quos voluptates explicabo cupiditate
             expedita, a ex eum perferendis hic nemo.
+          </p>
+          <p class="week-summary__description--js">
           </p>
         </article>
 
@@ -69,9 +74,33 @@
             itaque porro consequatur commodi modi ratione!
           </p>
         </article>
-
+        <article class="week-summary">
+          <h3 class="week-summary__title">Jak zrobic semantycznego HTML'a?</h3>
+          <p class="week-summary__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            dolore rerum eius ad earum soluta esse magni, consequuntur,
+            architecto, aperiam quis. Natus quae corporis placeat quia magni
+            quisquam aut atque ratione, quis fugiat porro assumenda eos
+            doloremque ullam suscipit quos voluptates explicabo cupiditate
+            expedita, a ex eum perferendis hic nemo.
+          </p>
+          <p class="week-summary__description--js">
+          </p>
+        </article><article class="week-summary">
+          <h3 class="week-summary__title">Jak zrobic semantycznego HTML'a?</h3>
+          <p class="week-summary__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            dolore rerum eius ad earum soluta esse magni, consequuntur,
+            architecto, aperiam quis. Natus quae corporis placeat quia magni
+            quisquam aut atque ratione, quis fugiat porro assumenda eos
+            doloremque ullam suscipit quos voluptates explicabo cupiditate
+            expedita, a ex eum perferendis hic nemo.
+          </p>
+          <p class="week-summary__description--js">
+          </p>
+        </article>
       </section>
-
+    </div>
       <footer class="footer">
         Strona o pracy domowej Maćka Kowalskiego jest wynikiem nauki HTML'a.
       </footer>
